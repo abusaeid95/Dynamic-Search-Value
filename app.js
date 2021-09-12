@@ -11,6 +11,7 @@ const loadData = () =>{
 const displayData = (meals) =>{
     console.log(meals);
     const mainContainer = document.getElementById('showcase');
+    mainContainer.textContent='';
     meals.forEach(meal => {
         const newDiv = document.createElement('div');
         newDiv.classList.add('col');
